@@ -22,14 +22,16 @@ export default function page() {
               skills 😄.
             </li>
             <li className="justify">
-              🤝 I'm always excited to collaborate with others and contribute to
-              different projects. If you have a project that needs an extra set
-              of hands or fresh ideas, feel free to reach out to me!
+              🤝 I&#39;m always excited to collaborate with others and
+              contribute to different projects. If you have a project that needs
+              an extra set of hands or fresh ideas, feel free to reach out to
+              me!
             </li>
             <li className="justify">
               📬 If you come across anything interesting in my projects or have
-              a project you'd like me to collaborate on, please don't hesitate
-              to get in touch. Let's create something awesome together!
+              a project you&#39;d like me to collaborate on, please don&#39;t
+              hesitate to get in touch. Let&#39;s create something awesome
+              together!
             </li>
           </ul>
           <p className="justify">
