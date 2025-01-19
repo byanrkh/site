@@ -9,6 +9,17 @@ export default function Footer() {
         <p className="text-sm">
           © {new Date().getFullYear()} Abyan Raditya, All right reserved.
         </p>
+        <p className="text-xs text-[#636367]">
+          {new Date()
+            .toLocaleTimeString("en-US", {
+              timeZone: "Asia/Jakarta",
+              timeZoneName: "shortGeneric",
+              hour: "2-digit",
+              // hour12:
+              minute: "numeric",
+            })
+            .slice(0, 8)}
+        </p>
       </div>
     </footer>
   );
