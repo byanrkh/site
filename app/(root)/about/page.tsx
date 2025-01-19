@@ -15,7 +15,7 @@ export default function page() {
             curious of how things work, a Front End developer who loves to
             create new things 🤞
           </p>
-          <ul className="list-disc space-y-5 ml-5">
+          <ul className="list-disc space-y-5 ml-8">
             <li className="justify">
               ✨ I spend my spare time building and developing free Apps and Web
               Applications because I want to continue growing and honing my
@@ -36,6 +36,25 @@ export default function page() {
             Feel free to explore my projects and get in touch for
             collaborations!
           </p>
+        </div>
+      </section>
+      <Divider />
+      <section>
+        <Title>Gears</Title>
+        <div>
+          <h2 className="text-lg font-medium mb-2">Hardware</h2>
+          <ul className="ml-8 list-disc">
+            <li>💻 14-Inch Lenovo Yoga 7i Pro 1TB</li>
+            <li>🖱️ Rexus DAXA Air IV</li>
+            <li>🖱️ Lenovo Legion M200</li>
+            <li>📱 iPhone 11 64GB</li>
+            <li>📱 iPad 10th Gen</li>
+          </ul>
+          <h2 className="text-lg font-medium mt-5 mb-2">Productivity</h2>
+          <ul className="ml-8 list-disc">
+            <li>🗒️ Notion</li>
+            <li>🔍 Google</li>
+          </ul>
         </div>
       </section>
       <Divider />

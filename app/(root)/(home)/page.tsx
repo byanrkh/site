@@ -65,7 +65,7 @@ export default function page() {
       </section>
       <Divider />
       <section>
-        <Title>Blogs</Title>
+        <Title>Latest Blogs</Title>
         <div className="grid grid-cols-1 gap-3">
           <Link
             href={"/"}
