@@ -18,13 +18,18 @@ export default function page() {
           </p>
         </div>
         <div className="relative">
-          <Image
-            src={"/assets/profile.png"}
-            alt="profile pic"
-            width={130}
-            height={130}
-            className="rounded-full grayscale hover:grayscale-0 duration-150"
-          />
+          <div className="relative">
+            <Image
+              src={"/assets/profile.png"}
+              alt="profile pic"
+              width={130}
+              height={130}
+              className="rounded-full grayscale hover:grayscale-0 duration-150"
+            />
+            <div className="px-1 bg-[#01A082] w-fit rounded-sm border-2 border-[#157A5C] absolute top-0 -rotate-12">
+              456
+            </div>
+          </div>
           <svg
             width="102"
             height="28"
