@@ -1,6 +1,5 @@
 import { Mono } from "@/libs/font";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 export default function page() {
@@ -13,7 +12,7 @@ export default function page() {
             <p className={`text-sm ${Mono.className}`}>FrontEnd Developer</p>
           </div>
           <p className="justify">
-            I'm a frontend developer specializing in building responsive and
+            I&#39;m a frontend developer specializing in building responsive and
             user-friendly web applications. My focus is on creating clean,
             efficient, and maintainable code.
           </p>
