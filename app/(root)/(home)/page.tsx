@@ -1,6 +1,8 @@
+import Divider from "@/components/Layout/Divider";
 import { Mono } from "@/libs/font";
 import Image from "next/image";
 import React from "react";
+import GitHubCalendar from "react-github-calendar";
 
 export default function page() {
   return (
@@ -47,6 +49,7 @@ export default function page() {
           </svg>
         </div>
       </section>
+      <Divider />
     </>
   );
 }
