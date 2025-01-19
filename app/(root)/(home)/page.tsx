@@ -26,7 +26,7 @@ export default function page() {
               height={130}
               className="rounded-full grayscale hover:grayscale-0 duration-150"
             />
-            <div className="px-1 bg-[#01A082] w-fit rounded-sm border-2 border-[#157A5C] absolute top-0 -rotate-12">
+            <div className="px-1 bg-[#01A082] w-fit rounded-sm border-[2.5px] border-[#157A5C] absolute top-0 -rotate-12">
               456
             </div>
           </div>
