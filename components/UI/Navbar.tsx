@@ -50,8 +50,8 @@ export default function Navbar() {
         </ul>
         <div className="block sm:hidden">
           <Drawer.Root>
-            <Drawer.Trigger className="relative flex h-10 flex-shrink-0 items-center justify-center gap-2 overflow-hidden rounded-full px-4 text-sm shadow-sm transition-all dark:bg-[#161615] hover:bg-[#1A1A19] text-white">
-              Open Menu
+            <Drawer.Trigger className="relative flex h-10 flex-shrink-0 items-center justify-center gap-2 overflow-hidden rounded-full px-4 text-sm shadow-sm transition-all bg-[#202024] hover:bg-[#1A1A19] text-white">
+              Menu
             </Drawer.Trigger>
             <Drawer.Portal>
               <Drawer.Overlay className="fixed inset-0 bg-black/40" />
