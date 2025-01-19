@@ -2,6 +2,7 @@ import Divider from "@/components/Layout/Divider";
 import Title from "@/components/Layout/Title";
 import { Mono } from "@/libs/font";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 
@@ -65,6 +66,35 @@ export default function page() {
       <Divider />
       <section>
         <Title>Blogs</Title>
+        <div className="grid grid-cols-1 gap-3">
+          <Link href={"/"} className="border border-[#202024] p-4 rounded">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <div className="mt-1 flex justify-between items-center">
+              <div className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500">
+                # NextJS
+              </div>
+              <p className="text-xs">Jan 1, 2025</p>
+            </div>
+          </Link>
+          <Link href={"/"} className="border border-[#202024] p-4 rounded">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <div className="mt-1 flex justify-between items-center">
+              <div className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500">
+                # NextJS
+              </div>
+              <p className="text-xs">Jan 1, 2025</p>
+            </div>
+          </Link>
+          <Link href={"/"} className="border border-[#202024] p-4 rounded">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <div className="mt-1 flex justify-between items-center">
+              <div className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500">
+                # NextJS
+              </div>
+              <p className="text-xs">Jan 1, 2025</p>
+            </div>
+          </Link>
+        </div>
       </section>
     </>
   );
