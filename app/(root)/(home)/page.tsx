@@ -67,8 +67,13 @@ export default function page() {
       <section>
         <Title>Blogs</Title>
         <div className="grid grid-cols-1 gap-3">
-          <Link href={"/"} className="border border-[#202024] p-4 rounded">
-            <h1>Lorem ipsum dolor sit amet.</h1>
+          <Link
+            href={"/"}
+            className="border border-[#202024] p-4 rounded group"
+          >
+            <h1 className="group-hover:underline">
+              Lorem ipsum dolor sit amet.
+            </h1>
             <div className="mt-1 flex justify-between items-center">
               <div className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500">
                 # NextJS
@@ -76,8 +81,13 @@ export default function page() {
               <p className="text-xs">Jan 1, 2025</p>
             </div>
           </Link>
-          <Link href={"/"} className="border border-[#202024] p-4 rounded">
-            <h1>Lorem ipsum dolor sit amet.</h1>
+          <Link
+            href={"/"}
+            className="border border-[#202024] p-4 rounded group"
+          >
+            <h1 className="group-hover:underline">
+              Lorem ipsum dolor sit amet.
+            </h1>
             <div className="mt-1 flex justify-between items-center">
               <div className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500">
                 # NextJS
@@ -85,8 +95,13 @@ export default function page() {
               <p className="text-xs">Jan 1, 2025</p>
             </div>
           </Link>
-          <Link href={"/"} className="border border-[#202024] p-4 rounded">
-            <h1>Lorem ipsum dolor sit amet.</h1>
+          <Link
+            href={"/"}
+            className="border border-[#202024] p-4 rounded group"
+          >
+            <h1 className="group-hover:underline">
+              Lorem ipsum dolor sit amet.
+            </h1>
             <div className="mt-1 flex justify-between items-center">
               <div className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500">
                 # NextJS
