@@ -1,4 +1,5 @@
 import Divider from "@/components/Layout/Divider";
+import Title from "@/components/Layout/Title";
 import { Mono } from "@/libs/font";
 import Image from "next/image";
 import React from "react";
@@ -62,6 +63,9 @@ export default function page() {
         </div>
       </section>
       <Divider />
+      <section>
+        <Title>Blogs</Title>
+      </section>
     </>
   );
 }
