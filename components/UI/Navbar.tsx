@@ -3,7 +3,6 @@
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 import { cn } from "@/libs/cn";
 import { Drawer } from "vaul";
 
@@ -26,7 +25,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="border-b border-b-[#202024] py-6 sm:py-8">
+    <nav className={cn("border-b border-b-[#202024] py-6 sm:py-8")}>
       <div className="mx-8 sm:mx-auto max-w-3xl flex justify-between items-center">
         <Link href={"/"}>
           <Image src={"/assets/logo.svg"} alt="logo" width={20} height={20} />
