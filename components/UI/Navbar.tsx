@@ -15,6 +15,10 @@ export default function Navbar() {
       path: "/",
     },
     {
+      label: "About",
+      path: "/about",
+    },
+    {
       label: "blog",
       path: "/blog",
     },
