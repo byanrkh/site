@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Grotesk } from "@/libs/font";
+import { Grotesk, Mono } from "@/libs/font";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
