@@ -59,8 +59,40 @@ export default function page() {
             username="byanrkh"
             year={new Date().getFullYear()}
             blockSize={9.77}
-            // blockSize={10.57}
           />
+        </div>
+      </section>
+      <Divider />
+      <section>
+        <Title>About</Title>
+        <div className="space-y-8">
+          <p>
+            Abyan was born in <u>Jakarta, Indonesia</u>. a 16 years web
+            developer 🧑‍💻. Being exposed to the creative arts and sciences at an
+            early age, this has always guided him on the path to learn something
+            new and be curious of how things work,{" "}
+            <span className="underline">
+              a Front End developer who loves to create new things
+            </span>{" "}
+            🤞
+          </p>
+          <ul className="list-disc space-y-4 justify ml-8">
+            <li>
+              ✨ I spend my spare time building and developing free Apps and Web
+              Applications because I want to continue growing and honing my
+              skills 😄.
+            </li>{" "}
+            <li>
+              🤝 I'm always excited to collaborate with others and contribute to
+              different projects. If you have a project that needs an extra set
+              of hands or fresh ideas, feel free to reach out to me!{" "}
+            </li>
+            <li>
+              📬 If you come across anything interesting in my projects or have
+              a project you'd like me to collaborate on, please don't hesitate
+              to get in touch. Let's create something awesome together!
+            </li>
+          </ul>
         </div>
       </section>
       <Divider />
