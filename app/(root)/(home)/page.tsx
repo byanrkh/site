@@ -90,8 +90,8 @@ export default function page() {
             </li>
             <li>
               📬 If you come across anything interesting in my projects or have
-              a project you#39;d like me to collaborate on, please don#39;t
-              hesitate to get in touch. Let#39;s create something awesome
+              a project you&#39;d like me to collaborate on, please don#39;t
+              hesitate to get in touch. Let&#39;s create something awesome
               together!
             </li>
           </ul>
