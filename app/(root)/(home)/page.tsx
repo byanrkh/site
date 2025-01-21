@@ -1,8 +1,6 @@
 import Divider from "@/components/Layout/Divider";
-import Title from "@/components/Layout/Title";
 import { Mono } from "@/libs/font";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import Blog from "./content/Blog";
