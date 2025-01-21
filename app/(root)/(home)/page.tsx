@@ -76,7 +76,7 @@ export default function page() {
             </span>{" "}
             🤞
           </p>
-          <ul className="list-disc space-y-4 justify ml-8">
+          <ul className="list-disc space-y-4 justify ml-8 dot">
             <li>
               ✨ I spend my spare time building and developing free Apps and Web
               Applications because I want to continue growing and honing my
@@ -103,7 +103,7 @@ export default function page() {
         <div className="grid grid-cols-1 gap-3">
           <Link
             href={"/"}
-            className="border border-[#202024] p-4 rounded group"
+            className="border border-[#202024] p-4 rounded group hover:scale-[1.02] duration-75"
           >
             <h1 className="group-hover:underline">
               Lorem ipsum dolor sit amet.
@@ -117,7 +117,7 @@ export default function page() {
           </Link>
           <Link
             href={"/"}
-            className="border border-[#202024] p-4 rounded group"
+            className="border border-[#202024] p-4 rounded group hover:scale-[1.02] duration-75"
           >
             <h1 className="group-hover:underline">
               Lorem ipsum dolor sit amet.
@@ -131,7 +131,7 @@ export default function page() {
           </Link>
           <Link
             href={"/"}
-            className="border border-[#202024] p-4 rounded group"
+            className="border border-[#202024] p-4 rounded group hover:scale-[1.02] duration-75"
           >
             <h1 className="group-hover:underline">
               Lorem ipsum dolor sit amet.
