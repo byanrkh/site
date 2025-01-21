@@ -5,6 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
+import Blog from "./content/Blog";
+import About from "./content/About";
 
 export default function page() {
   return (
@@ -63,88 +65,9 @@ export default function page() {
         </div>
       </section>
       <Divider />
-      <section>
-        <Title>About</Title>
-        <div className="space-y-8">
-          <p>
-            Abyan was born in <u>Jakarta, Indonesia</u>. a 16 years web
-            developer 🧑‍💻. Being exposed to the creative arts and sciences at an
-            early age, this has always guided him on the path to learn something
-            new and be curious of how things work,{" "}
-            <span className="underline">
-              a Front End developer who loves to create new things
-            </span>{" "}
-            🤞
-          </p>
-          <ul className="list-disc space-y-4 justify ml-8 dot">
-            <li>
-              ✨ I spend my spare time building and developing free Apps and Web
-              Applications because I want to continue growing and honing my
-              skills 😄.
-            </li>{" "}
-            <li>
-              🤝 I&#39;m always excited to collaborate with others and
-              contribute to different projects. If you have a project that needs
-              an extra set of hands or fresh ideas, feel free to reach out to
-              me!{" "}
-            </li>
-            <li>
-              📬 If you come across anything interesting in my projects or have
-              a project you&#39;d like me to collaborate on, please don&#39;t
-              hesitate to get in touch. Let&#39;s create something awesome
-              together!
-            </li>
-          </ul>
-        </div>
-      </section>
+      <About />
       <Divider />
-      <section>
-        <Title>Latest Blogs</Title>
-        <div className="grid grid-cols-1 gap-3">
-          <Link
-            href={"/"}
-            className="border border-[#202024] p-4 rounded group hover:scale-[1.02] duration-75"
-          >
-            <h1 className="group-hover:underline">
-              Lorem ipsum dolor sit amet.
-            </h1>
-            <div className="mt-1 flex justify-between items-center">
-              <div className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500">
-                # NextJS
-              </div>
-              <p className="text-xs">Jan 1, 2025</p>
-            </div>
-          </Link>
-          <Link
-            href={"/"}
-            className="border border-[#202024] p-4 rounded group hover:scale-[1.02] duration-75"
-          >
-            <h1 className="group-hover:underline">
-              Lorem ipsum dolor sit amet.
-            </h1>
-            <div className="mt-1 flex justify-between items-center">
-              <div className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500">
-                # NextJS
-              </div>
-              <p className="text-xs">Jan 1, 2025</p>
-            </div>
-          </Link>
-          <Link
-            href={"/"}
-            className="border border-[#202024] p-4 rounded group hover:scale-[1.02] duration-75"
-          >
-            <h1 className="group-hover:underline">
-              Lorem ipsum dolor sit amet.
-            </h1>
-            <div className="mt-1 flex justify-between items-center">
-              <div className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500">
-                # NextJS
-              </div>
-              <p className="text-xs">Jan 1, 2025</p>
-            </div>
-          </Link>
-        </div>
-      </section>
+      <Blog />
     </>
   );
 }
