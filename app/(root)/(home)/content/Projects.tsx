@@ -20,6 +20,19 @@ export default function Projects() {
             # NextJS
           </div>
         </Link>
+        <Link
+          href={"https://github.com/byanrkh/portfolio"}
+          className="border border-[#202024] p-4 rounded group hover:scale-[1.02] duration-75"
+        >
+          <h1 className="group-hover:underline">NextJS portfolio template</h1>
+          <p className="mt-2 mb-4 text-sm text-[#a6a6a6]">
+            portfolio template using Next.js to showcase personal or
+            professional projects, etc.
+          </p>
+          <div className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500 font-mono w-fit">
+            # NextJS
+          </div>
+        </Link>
       </div>
     </section>
   );
