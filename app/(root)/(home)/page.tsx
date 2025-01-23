@@ -4,6 +4,7 @@ import React from "react";
 import GitHubCalendar from "react-github-calendar";
 import Blog from "./content/Blog";
 import About from "./content/About";
+import Projects from "./content/Projects";
 
 export default function page() {
   return (
@@ -63,6 +64,8 @@ export default function page() {
       </section>
       <Divider />
       <About />
+      <Divider />
+      <Projects />
       <Divider />
       <Blog />
     </>
