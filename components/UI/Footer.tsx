@@ -1,6 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
+import { GitHub, Instagram, Twitter } from "react-feather";
 
 export default function Footer() {
   return (
@@ -9,17 +11,23 @@ export default function Footer() {
         <p className="text-sm">
           © {new Date().getFullYear()} Abyan Raditya, All right reserved.
         </p>
-        <p className="text-xs text-[#636367]">
-          {new Date()
-            .toLocaleTimeString("en-US", {
-              timeZone: "Asia/Jakarta",
-              timeZoneName: "shortGeneric",
-              hour: "2-digit",
-              // hour12:
-              minute: "numeric",
-            })
-            .slice(0, 8)}
-        </p>
+        <ul className="flex gap-3 sm:mt-0 mt-2 text-zinc-400">
+          <li>
+            <Link href={"https://instagram.com/byanrkh"} target="_blank">
+              <Instagram size={18} />
+            </Link>
+          </li>
+          <li>
+            <Link href={"https://github.com/byanrkh"} target="_blank">
+              <GitHub size={18} />
+            </Link>
+          </li>
+          <li>
+            <Link href={"https://twitter.com/byanrkh"} target="_blank">
+              <Twitter size={18} />
+            </Link>
+          </li>
+        </ul>
       </div>
     </footer>
   );

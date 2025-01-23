@@ -13,22 +13,21 @@ export default function About() {
           curious of how things work,{" "}
           <span className="underline">
             a Front End developer who loves to create new things
-          </span>{" "}
-          🤞
+          </span>
         </p>
         <ul className="list-disc space-y-4 justify ml-8 dot">
           <li>
-            ✨ I spend my spare time building and developing free Apps and Web
-            Applications because I want to continue growing and honing my skills
-            😄.
+            I spend my spare time building and developing free Apps and Web
+            Applications because I want to continue growing and honing my
+            skills.
           </li>{" "}
           <li>
-            🤝 I&#39;m always excited to collaborate with others and contribute
-            to different projects. If you have a project that needs an extra set
-            of hands or fresh ideas, feel free to reach out to me!{" "}
+            I&#39;m always excited to collaborate with others and contribute to
+            different projects. If you have a project that needs an extra set of
+            hands or fresh ideas, feel free to reach out to me!{" "}
           </li>
           <li>
-            📬 If you come across anything interesting in my projects or have a
+            If you come across anything interesting in my projects or have a
             project you&#39;d like me to collaborate on, please don&#39;t
             hesitate to get in touch. Let&#39;s create something awesome
             together!
