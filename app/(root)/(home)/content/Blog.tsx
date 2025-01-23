@@ -5,7 +5,15 @@ import React from "react";
 export default function Blog() {
   return (
     <section>
-      <Title>Latest Blogs</Title>
+      <div className="flex justify-between items-center">
+        <Title>Latest Blogs</Title>
+        <Link
+          href={"/blog"}
+          className="text-xs text-zinc-500 -mt-5 hover:underline"
+        >
+          view more
+        </Link>
+      </div>
       <div className="grid grid-cols-1 gap-3">
         <Link
           href={"/"}
@@ -13,7 +21,7 @@ export default function Blog() {
         >
           <h1 className="group-hover:underline">Lorem ipsum dolor sit amet.</h1>
           <div className="mt-1 flex justify-between items-center">
-            <div className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500">
+            <div className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500 font-mono">
               # NextJS
             </div>
             <p className="text-xs">Jan 1, 2025</p>
