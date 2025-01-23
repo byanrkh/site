@@ -1,5 +1,4 @@
 import Divider from "@/components/Layout/Divider";
-import { Mono } from "@/libs/font";
 import Image from "next/image";
 import React from "react";
 import GitHubCalendar from "react-github-calendar";
@@ -16,7 +15,7 @@ export default function page() {
               <h1 className="text-2xl font-bold text-white">
                 Abyan Raditya 🪴
               </h1>
-              <p className={`text-sm ${Mono.className}`}>FrontEnd Developer</p>
+              <p className={`text-sm font-mono`}>FrontEnd Developer</p>
             </div>
             <p className="justify">
               I&#39;m a frontend developer specializing in building responsive
