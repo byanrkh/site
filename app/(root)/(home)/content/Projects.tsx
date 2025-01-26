@@ -13,7 +13,7 @@ export default function Projects() {
         >
           <h1 className="group-hover:underline">Portfolio</h1>
           <p className="mt-2 mb-4 text-sm text-[#a6a6a6]">
-            a digital space that showcases a person's best work, blog,
+            a digital space that showcases a person&#39;s best work, blog,
             backgrounds, etc.
           </p>
           <div className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500 font-mono w-fit">
