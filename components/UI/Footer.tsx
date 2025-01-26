@@ -11,7 +11,7 @@ export default function Footer() {
         <p className="text-sm">
           © {new Date().getFullYear()} Abyan Raditya, All right reserved.
         </p>
-        <ul className="flex gap-3 sm:mt-0 mt-2 text-zinc-400">
+        <ul className="flex gap-5 sm:mt-0 mt-2 text-zinc-400">
           <li>
             <Link href={"https://instagram.com/byanrkh"} target="_blank">
               <Instagram size={18} />
