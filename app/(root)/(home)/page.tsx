@@ -18,7 +18,7 @@ export default function page() {
               </h1>
               <p className={`text-sm font-mono`}>FrontEnd Developer</p>
             </div>
-            <p className="justify">
+            <p>
               I&#39;m a frontend developer specializing in building responsive
               and user-friendly web applications. My focus is on creating clean,
               efficient, and maintainable code.

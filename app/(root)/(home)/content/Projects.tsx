@@ -1,4 +1,5 @@
 import Title from "@/components/Layout/Title";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -6,6 +7,7 @@ export default function Projects() {
   const project = [
     {
       label: "Personal Website",
+      image: "byanrkh.png",
       summary:
         "a digital space that showcases a person&#39;s best work, blog, backgrounds, etc.",
       tags: ["NextJS"],
@@ -13,6 +15,7 @@ export default function Projects() {
     },
     {
       label: "MDX Blog",
+      image: "mdx-blog.png",
       summary: "Minimal looking simple mdx Blog system using NextJS!",
       tags: ["NextJS", "MDX"],
       link: "https://github.com/byanrkh/mdx-blog",
@@ -28,10 +31,17 @@ export default function Projects() {
             <Link
               key={p.link}
               href={p.link}
-              className="border border-[#202024] p-4 rounded group hover:scale-[1.02] duration-75"
+              className="border border-[#202024] p-4 rounded group hover:scale-[1.02] duration-75 h-fit"
               target="_blank"
             >
-              <h1 className="group-hover:underline">{p.label}</h1>
+              <Image
+                src={`/assets/project/${p.image}`}
+                alt="mockup"
+                width={1000}
+                height={100}
+                className="border border-[#202024] rounded"
+              />
+              <h2 className="group-hover:underline mt-4">{p.label}</h2>
               <p className="mt-2 mb-4 text-sm text-[#a6a6a6]">{p.summary}</p>
               <ul className="flex gap-1">
                 {p.tags.map((tag) => {
