@@ -3,8 +3,8 @@ import Title from "@/components/Layout/Title";
 import { getAllPosts } from "@/libs/blog/getPost";
 import React from "react";
 
-export default function page() {
-  const posts = getAllPosts();
+export default async function page() {
+  const posts = await getAllPosts();
 
   return (
     <section>

@@ -4,8 +4,8 @@ import { getAllPosts } from "@/libs/blog/getPost";
 import Link from "next/link";
 import React from "react";
 
-export default function Blog() {
-  const posts = getAllPosts();
+export default async function Blog() {
+  const posts = await getAllPosts();
 
   return (
     <section>

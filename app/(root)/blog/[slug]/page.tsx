@@ -9,19 +9,17 @@ import { formatDate } from "@/libs/blog/formatDate";
 import Link from "next/link";
 
 export async function generateStaticParams() {
-  const posts = getAllPosts();
+  const posts = await getAllPosts();
   return posts.map((post) => ({
     slug: post.slug,
   }));
 }
 
-interface BlogPostProps {
-  params: {
-    slug: string;
-  };
-}
-
-export default function BlogPost({ params }: BlogPostProps) {
+export default async function BlogPost({
+  params,
+}: {
+  params: { slug: string };
+}) {
   const { slug } = params;
   const post = getPostBySlug(slug);
 
@@ -42,11 +40,11 @@ export default function BlogPost({ params }: BlogPostProps) {
           </li>
           /
         </ul>
-        <h1 className="text-5xl font-bold mb-5">{post.title}</h1>
+        <h1 className="text-5xl font-bold mb-5">{(await post).title}</h1>
         <hr className="mt-20 mb-5 border-t border-t-[#252529]" />
         <div className="flex justify-between items-center mx-2">
           <ul className="flex gap-2">
-            {post.tags.map((tag) => {
+            {(await post).tags.map((tag) => {
               return (
                 <li
                   className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500"
@@ -58,14 +56,15 @@ export default function BlogPost({ params }: BlogPostProps) {
             })}
           </ul>
           <ul className="flex text-xs gap-2">
-            <li>{formatDate(post.date)}</li>·<li>{post.readTime} min read</li>
+            <li>{formatDate((await post).date)}</li>·
+            <li>{(await post).readTime} min read</li>
           </ul>
         </div>
         <hr className="mt-5 mb-20 border-t border-t-[#252529]" />
       </header>
       <article className="prose lg:prose-base prose-invert">
         <MDXRemote
-          source={post.content}
+          source={(await post).content}
           options={mdxOptions}
           components={components}
         />
