@@ -1,6 +1,28 @@
+import { formatDate } from "@/libs/formatDate";
+import { getAllPosts, getPostBySlug, mdxOptions } from "@/libs/post";
+import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
+import { notFound } from "next/navigation";
+import React from "react";
 
-export default async function BlogPost() {
+type Props = {
+  params: Promise<{ slug: string }>;
+};
+
+export function generateStaticParams() {
+  const posts = getAllPosts();
+  return posts.map((blog) => ({
+    slug: blog.slug,
+  }));
+}
+
+export default async function BlogPost({ params }: Props) {
+  if (!params || !(await params).slug) {
+    notFound();
+  }
+  const { slug } = await params;
+  const post = getPostBySlug(slug);
+
   return (
     <section>
       <header>
@@ -18,11 +40,11 @@ export default async function BlogPost() {
           </li>
           /
         </ul>
-        <h1 className="text-5xl font-bold mb-5">halo</h1>
+        <h1 className="text-5xl font-bold mb-5">{post.title}</h1>
         <hr className="mt-20 mb-5 border-t border-t-[#252529]" />
         <div className="flex justify-between items-center mx-2">
           <ul className="flex gap-2">
-            {/* {(await post).tags.map((tag) => {
+            {(await post).tags.map((tag) => {
               return (
                 <li
                   className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500"
@@ -31,24 +53,16 @@ export default async function BlogPost() {
                   # {tag}
                 </li>
               );
-            })} */}
-            <li className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500">
-              # NextJS
-            </li>
+            })}
           </ul>
           <ul className="flex text-xs gap-2">
-            <li>2 Jan, 2025</li>·<li>1 min read</li>
+            <li>{formatDate(post.date)}</li>·<li>{post.readTime} min read</li>
           </ul>
         </div>
         <hr className="mt-5 mb-20 border-t border-t-[#252529]" />
       </header>
       <article className="prose lg:prose-base prose-invert">
-        {/* <MDXRemote
-          source={(await post).content}
-          options={mdxOptions}
-          components={components}
-        /> */}
-        a
+        <MDXRemote source={(await post).content} options={mdxOptions} />
       </article>
     </section>
   );
