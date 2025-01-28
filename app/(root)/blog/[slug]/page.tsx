@@ -6,7 +6,6 @@ import {
   components,
 } from "@/libs/blog/getPost";
 import { formatDate } from "@/libs/blog/formatDate";
-import Divider from "@/components/Layout/Divider";
 import Link from "next/link";
 
 export async function generateStaticParams() {
