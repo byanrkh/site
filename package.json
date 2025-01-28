@@ -9,10 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/mdx": "^15.1.6",
+    "@tailwindcss/typography": "^0.5.16",
     "@vercel/analytics": "^1.4.1",
     "@vercel/speed-insights": "^1.1.0",
     "clsx": "^2.1.1",
+    "gray-matter": "^4.0.3",
     "next": "15.1.5",
+    "next-mdx-remote": "^5.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-feather": "^2.0.10",
