@@ -20,7 +20,7 @@ export default async function Blog() {
       </div>
       <div className="grid grid-cols-1 gap-3">
         {generatePost
-          .map((post, idx) => {
+          .map((post) => {
             return <PostCard key={post.slug} post={post} />;
           })
           .slice(0, 3)}

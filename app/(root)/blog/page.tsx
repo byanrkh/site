@@ -1,7 +1,6 @@
 import PostCard from "@/components/Layout/PostCard";
 import Title from "@/components/Layout/Title";
 import { getAllPosts } from "@/libs/post";
-import Link from "next/link";
 import React from "react";
 
 export default async function page() {
