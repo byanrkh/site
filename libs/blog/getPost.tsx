@@ -2,7 +2,7 @@ import fs from "fs/promises";
 import path from "path";
 import matter from "gray-matter";
 import type { Post } from "@/types/post";
-import { calculateReadTime } from "@/libs/blog/readTime";
+import { calculateReadTime } from "./readTime";
 import type { MDXRemoteProps } from "next-mdx-remote";
 
 const postsDirectory = path.join(process.cwd(), "content");
@@ -10,7 +10,7 @@ const postsDirectory = path.join(process.cwd(), "content");
 export async function getAllPosts(): Promise<Post[]> {
   const filenames = await fs.readdir(postsDirectory);
 
-  const posts: Post[] = await Promise.all(
+  const posts = await Promise.all(
     filenames
       .filter((filename) => filename.endsWith(".mdx"))
       .map(async (filename) => {
@@ -58,6 +58,12 @@ export const mdxOptions = {
 };
 
 export const components: MDXRemoteProps["components"] = {
+  h1: ({ children }) => (
+    <h1 className="text-2xl font-extrabold relative flex group cursor-pointer mb-5">
+      {children}
+      <span className="absolute -left-6 top-0 hidden group-hover:block">#</span>
+    </h1>
+  ),
   pre: (props: any) => <div {...props} />,
   code: (props: any) => <code {...props} />,
 };

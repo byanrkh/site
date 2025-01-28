@@ -6,7 +6,7 @@ import {
   components,
 } from "@/libs/blog/getPost";
 import { formatDate } from "@/libs/blog/formatDate";
-import Link from "next/link";
+import { Link } from "react-feather";
 
 export async function generateStaticParams() {
   const posts = await getAllPosts();
@@ -15,13 +15,15 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function BlogPost({
-  params,
-}: {
-  params: { slug: string };
-}) {
+interface PageProps {
+  params: {
+    slug: string;
+  };
+}
+
+export default async function BlogPost({ params }: PageProps) {
   const { slug } = params;
-  const post = getPostBySlug(slug);
+  const post = await getPostBySlug(slug);
 
   return (
     <section>
