@@ -9,7 +9,7 @@ export default async function page() {
     <section>
       <Title>Blog</Title>
       <div className="grid grid-cols-1 gap-3">
-        {generatePost.map((post, idx) => {
+        {generatePost.map((post) => {
           return <PostCard key={post.slug} post={post} />;
         })}
       </div>
