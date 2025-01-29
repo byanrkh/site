@@ -44,7 +44,7 @@ export default async function BlogPost({ params }: Props) {
         <hr className="mt-20 mb-5 border-t border-t-[#252529]" />
         <div className="flex justify-between items-center mx-2">
           <Link
-            className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500"
+            className="text-sm hover:underline bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500"
             href={`/blog/tags/${post.tags}`}
           >
             # {post.tags}

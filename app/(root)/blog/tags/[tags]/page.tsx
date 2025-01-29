@@ -20,7 +20,7 @@ export default async function page({ params }: Props) {
     <section>
       <Title>
         Blog topic:{" "}
-        <div className="ml-2 text-xl bg-[#18181b] border border-[#252529] px-1 rounded font-normal">
+        <div className="ml-2 text-xl bg-[#18181b] border border-[#252529] text-zinc-500 px-1 rounded font-normal">
           # {tags}
         </div>
       </Title>
