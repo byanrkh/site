@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Post } from "@/types";
 import { formatDate } from "@/libs/formatDate";
+import { cn } from "@/libs/cn";
 
 export default function PostCard({ post }: { post: Post }) {
   return (
@@ -14,7 +15,9 @@ export default function PostCard({ post }: { post: Post }) {
           {post.tags.map((tag) => (
             <div
               key={tag}
-              className="text-xs bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500"
+              className={cn(
+                "text-xs bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500"
+              )}
             >
               # {tag}
             </div>

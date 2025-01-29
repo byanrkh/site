@@ -46,11 +46,13 @@ export default async function BlogPost({ params }: Props) {
           <ul className="flex gap-2">
             {(await post).tags.map((tag) => {
               return (
-                <li
-                  className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500"
-                  key={tag}
-                >
-                  # {tag}
+                <li key={tag}>
+                  <Link
+                    className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500"
+                    href={`/blog/tags/${post.tags}`}
+                  >
+                    # {tag}
+                  </Link>{" "}
                 </li>
               );
             })}
