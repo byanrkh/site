@@ -11,17 +11,12 @@ export default function PostCard({ post }: { post: Post }) {
     >
       <h1 className="group-hover:underline">{post.title}</h1>
       <div className="mt-1 flex justify-between items-center">
-        <div className="flex gap-1">
-          {post.tags.map((tag) => (
-            <div
-              key={tag}
-              className={cn(
-                "text-xs bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500"
-              )}
-            >
-              # {tag}
-            </div>
-          ))}
+        <div
+          className={cn(
+            "text-xs bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500"
+          )}
+        >
+          # {post.tags}
         </div>
         <p className="text-xs text-zinc-400">{formatDate(post.date)}</p>
       </div>

@@ -21,7 +21,7 @@ export function getAllPosts(): Post[] {
       date: data.date,
       content: content,
       readTime: calculateReadTime(content),
-      tags: data.tags || [],
+      tags: data.tags,
     };
   });
 
