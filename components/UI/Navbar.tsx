@@ -26,7 +26,7 @@ export default function Navbar() {
 
   return (
     <nav className={cn("border-b border-b-[#202024] py-6 sm:py-8")}>
-      <div className="mx-8 sm:mx-auto max-w-3xl flex justify-between items-center">
+      <div className="mx-8 px-4 sm:mx-auto max-w-3xl flex justify-between items-center">
         <Link href={"/"}>
           <Image src={"/assets/logo.svg"} alt="logo" width={20} height={20} />
         </Link>

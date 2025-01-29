@@ -45,7 +45,7 @@ export default function page() {
               viewBox="0 0 102 28"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="absolute z-10 bottom-0 -left-28 hidden sm:block"
+              className="absolute z-10 bottom-0 -left-28 hidden md:block"
             >
               <path
                 fillRule="evenodd"
@@ -60,7 +60,7 @@ export default function page() {
           <GitHubCalendar
             username="byanrkh"
             year={new Date().getFullYear()}
-            blockSize={9.77}
+            blockSize={9.174527726415}
           />
         </div>
       </section>
