@@ -24,6 +24,7 @@
     "react-github-calendar": "^4.5.4",
     "react-syntax-highlighter": "^15.6.1",
     "remark-gfm": "^4.0.0",
+    "shiki": "^2.1.0",
     "tailwind-merge": "^2.6.0",
     "vaul": "^1.1.2"
   },

@@ -1,5 +1,10 @@
 import { formatDate } from "@/libs/formatDate";
-import { getAllPosts, getPostBySlug, mdxOptions } from "@/libs/post";
+import {
+  components,
+  getAllPosts,
+  getPostBySlug,
+  mdxOptions,
+} from "@/libs/post";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -56,7 +61,11 @@ export default async function BlogPost({ params }: Props) {
         <hr className="mt-5 mb-20 border-t border-t-[#252529]" />
       </header>
       <article className="prose lg:prose-base prose-invert">
-        <MDXRemote source={(await post).content} options={mdxOptions} />
+        <MDXRemote
+          source={(await post).content}
+          options={mdxOptions}
+          components={components}
+        />
       </article>
     </section>
   );
