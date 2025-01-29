@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import React from "react";
 
 export default function page({ params }: { params: { tags: string } }) {
-  let posts = getAllPosts().filter((post) => post.tags.includes(params.tags));
+  const posts = getAllPosts().filter((post) => post.tags.includes(params.tags));
 
   if (!posts) {
     notFound();
