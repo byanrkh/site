@@ -4,8 +4,13 @@ import { getAllPosts } from "@/libs/post";
 import { notFound } from "next/navigation";
 import React from "react";
 
-export default function page({ params }: { params: { tags: string } }) {
-  const posts = getAllPosts().filter((post) => post.tags.includes(params.tags));
+type Props = {
+  params: Promise<{ tags: string }>;
+};
+
+export default async function page({ params }: Props) {
+  const tags = (await params).tags;
+  const posts = getAllPosts().filter((post) => post.tags.includes(tags));
 
   if (!posts) {
     notFound();
@@ -16,7 +21,7 @@ export default function page({ params }: { params: { tags: string } }) {
       <Title>
         Blog topic:{" "}
         <div className="ml-2 text-xl bg-[#18181b] border border-[#252529] px-1 rounded font-normal">
-          # {params.tags}
+          # {tags}
         </div>
       </Title>
       <div className="grid grid-cols-1 gap-3">
