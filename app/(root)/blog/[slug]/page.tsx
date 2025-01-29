@@ -43,20 +43,12 @@ export default async function BlogPost({ params }: Props) {
         <h1 className="text-5xl font-bold mb-5">{post.title}</h1>
         <hr className="mt-20 mb-5 border-t border-t-[#252529]" />
         <div className="flex justify-between items-center mx-2">
-          <ul className="flex gap-2">
-            {(await post).tags.map((tag) => {
-              return (
-                <li key={tag}>
-                  <Link
-                    className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500"
-                    href={`/blog/tags/${post.tags}`}
-                  >
-                    # {tag}
-                  </Link>{" "}
-                </li>
-              );
-            })}
-          </ul>
+          <Link
+            className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500"
+            href={`/blog/tags/${post.tags}`}
+          >
+            # {post.tags}
+          </Link>{" "}
           <ul className="flex text-xs gap-2">
             <li>{formatDate(post.date)}</li>·<li>{post.readTime} min read</li>
           </ul>
