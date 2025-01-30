@@ -1,10 +1,10 @@
-import { formatDate } from "@/libs/formatDate";
+import { formatDate } from "@/libs/Blog/formatDate";
 import {
   components,
   getAllPosts,
   getPostBySlug,
   mdxOptions,
-} from "@/libs/post";
+} from "@/libs/Blog/post";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
 import { notFound } from "next/navigation";
