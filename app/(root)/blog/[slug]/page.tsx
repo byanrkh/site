@@ -10,7 +10,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import React from "react";
 import Comment from "./content/Comment";
-import Divider from "@/components/Layout/Divider";
 
 type Props = {
   params: Promise<{ slug: string }>;
