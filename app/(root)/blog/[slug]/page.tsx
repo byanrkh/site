@@ -5,7 +5,6 @@ import {
   getPostBySlug,
   mdxOptions,
 } from "@/libs/post";
-import Giscus from "@giscus/react";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
 import { notFound } from "next/navigation";
