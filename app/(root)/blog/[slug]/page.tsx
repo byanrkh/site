@@ -10,6 +10,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import React from "react";
 import Comment from "./content/Comment";
+import Divider from "@/components/Layout/Divider";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -68,6 +69,11 @@ export default async function BlogPost({ params }: Props) {
           components={components}
         />
       </article>
+      <p className="mt-16 text-zinc-500 text-sm font-mono text-center">
+        ~ Its the End of{" "}
+        <span className="text-violet-300 underline">{post.title}</span> ~
+      </p>
+      <hr className="mb-20 mt-5 border-t border-t-[#252529]" />
       <Comment />
     </section>
   );
