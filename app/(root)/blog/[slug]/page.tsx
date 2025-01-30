@@ -5,10 +5,12 @@ import {
   getPostBySlug,
   mdxOptions,
 } from "@/libs/post";
+import Giscus from "@giscus/react";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import React from "react";
+import Comment from "./content/Comment";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -67,6 +69,7 @@ export default async function BlogPost({ params }: Props) {
           components={components}
         />
       </article>
+      <Comment />
     </section>
   );
 }
