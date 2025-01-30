@@ -57,11 +57,7 @@ export default function page() {
           </div>
         </div>
         <div className="bg-[#18181b] border border-[#252529] p-5 rounded mt-10">
-          <GitHubCalendar
-            username="byanrkh"
-            year={new Date().getFullYear()}
-            blockSize={9.174527726415}
-          />
+          <GitHubCalendar username="byanrkh" blockSize={9.174527726415} />
         </div>
       </section>
       <Divider />
