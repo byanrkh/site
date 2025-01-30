@@ -4,7 +4,6 @@ import matter from "gray-matter";
 import type { Post } from "@/types";
 import remarkGfm from "remark-gfm";
 import { MDXRemoteProps } from "next-mdx-remote";
-import { ExternalLink } from "react-feather";
 
 const postsDir = path.join(process.cwd(), "content");
 
