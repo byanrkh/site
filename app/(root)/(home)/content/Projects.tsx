@@ -31,7 +31,7 @@ export default function Projects() {
             <Link
               key={p.label}
               href={p.link}
-              className="border relative pb-16 border-[#252529] bg-[#141417] rounded-xl hover:scale-[1.01] duration-200"
+              className="border relative pb-12 border-[#252529] bg-[#141417] rounded-xl hover:scale-[1.01] duration-200"
             >
               <div className="p-5">
                 <Image
@@ -41,7 +41,7 @@ export default function Projects() {
                   height={100}
                   className="border border-[#202024] rounded-lg"
                 />
-                <div className="mt-5">
+                <div className="mt-5 mb-5">
                   <h1 className="font-black text-lg">{p.label}</h1>
                   <p>{p.summary}</p>
                 </div>
