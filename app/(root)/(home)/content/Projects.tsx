@@ -2,6 +2,7 @@ import Title from "@/components/Layout/Title";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { ExternalLink } from "react-feather";
 
 export default function Projects() {
   const project = [
@@ -9,7 +10,7 @@ export default function Projects() {
       label: "Personal Website",
       image: "byanrkh.png",
       summary:
-        "a digital space that showcases a person&#39;s best work, blog, backgrounds, etc.",
+        "a digital space that showcases a person's best work, blog, backgrounds, etc.",
       tags: ["NextJS"],
       link: "https://github.com/byanrkh/site",
     },
@@ -31,7 +32,7 @@ export default function Projects() {
             <Link
               key={p.link}
               href={p.link}
-              className="border border-[#202024] p-4 rounded group hover:scale-[1.02] duration-75 h-fit"
+              className="border border-[#202024] p-4 rounded group hover:scale-[1.02] duration-200 h-fit"
               target="_blank"
             >
               <Image
