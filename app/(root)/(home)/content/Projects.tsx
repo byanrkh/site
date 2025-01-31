@@ -2,7 +2,6 @@ import Title from "@/components/Layout/Title";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { ExternalLink } from "react-feather";
 
 export default function Projects() {
   const project = [
@@ -30,32 +29,40 @@ export default function Projects() {
         {project.map((p) => {
           return (
             <Link
-              key={p.link}
+              key={p.label}
               href={p.link}
-              className="border border-[#202024] p-4 rounded group hover:scale-[1.02] duration-200 h-fit"
-              target="_blank"
+              className="border relative pb-16 border-[#252529] bg-[#141417] rounded-xl hover:scale-[1.01] duration-200"
             >
-              <Image
-                src={`/assets/project/${p.image}`}
-                alt="mockup"
-                width={1000}
-                height={100}
-                className="border border-[#202024] rounded"
-              />
-              <h2 className="group-hover:underline mt-4">{p.label}</h2>
-              <p className="mt-2 mb-4 text-sm text-[#a6a6a6]">{p.summary}</p>
-              <ul className="flex gap-1">
-                {p.tags.map((tag) => {
-                  return (
-                    <li
-                      key={tag}
-                      className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500 font-mono w-fit"
-                    >
-                      # {tag}
-                    </li>
-                  );
-                })}
-              </ul>
+              <div className="p-5">
+                <Image
+                  src={`/assets/project/${p.image}`}
+                  alt="mockup"
+                  width={1000}
+                  height={100}
+                  className="border border-[#202024] rounded-lg"
+                />
+                <div className="mt-5">
+                  <h1 className="font-black text-lg">{p.label}</h1>
+                  <p>{p.summary}</p>
+                </div>
+              </div>
+              <div className="absolute bottom-0 w-full">
+                <hr className="border-t border-t-[#252529] border-dashed" />
+                <div className="p-5">
+                  <ul className="flex gap-1">
+                    {p.tags.map((tag) => {
+                      return (
+                        <li
+                          key={tag}
+                          className="text-sm bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500 font-mono w-fit"
+                        >
+                          # {tag}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              </div>
             </Link>
           );
         })}
