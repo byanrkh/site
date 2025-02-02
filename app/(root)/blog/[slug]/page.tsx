@@ -72,8 +72,6 @@ export default async function BlogPost({ params }: Props) {
         ~ Its the End of{" "}
         <span className="text-violet-300 underline">{post.title}</span> ~
       </p>
-      <hr className="mb-20 mt-5 border-t border-t-[#252529]" />
-      <Comment />
     </section>
   );
 }
