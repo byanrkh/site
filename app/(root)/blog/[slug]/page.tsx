@@ -9,7 +9,6 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import React from "react";
-import Comment from "./content/Comment";
 
 type Props = {
   params: Promise<{ slug: string }>;
