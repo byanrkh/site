@@ -50,7 +50,7 @@ export default function Projects() {
                   <Link
                     target="_blank"
                     href={p.link}
-                    className="border border-[#252529] bg-[#18181b] px-5 py-2 flex items-center rounded-lg text-zinc-400 gap-2"
+                    className="border border-[#252529] bg-[#18181b] hover:bg-[#1f1f24] duration-200 px-5 py-2 flex items-center rounded-lg text-zinc-400 gap-2"
                   >
                     <Link2 size={15} /> Preview
                   </Link>
