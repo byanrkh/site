@@ -13,7 +13,7 @@ import { useEffect, useState } from "react";
 export default function GuestBook() {
   const [entries, setEntries] = useState<GuestbookEntry[]>([]);
   const [newMessage, setNewMessage] = useState("");
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<unknown>(null);
 
   useEffect(() => {
     loadEntries();
