@@ -7,7 +7,7 @@ import {
   addEntry,
   type GuestbookEntry,
 } from "@/libs/guestbook/guestbook";
-import { signInWithGithub, signOut, getUser } from "@/libs/guestbook/auth";
+import { signInWithGithub, getUser } from "@/libs/guestbook/auth";
 import { useEffect, useState } from "react";
 
 export default function GuestBook() {
