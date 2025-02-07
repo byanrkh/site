@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@giscus/react": "^3.1.0",
     "@next/mdx": "^15.1.6",
-    "@supabase/supabase-js": "^2.48.1",
     "@tailwindcss/typography": "^0.5.16",
     "@vercel/analytics": "^1.4.1",
     "@vercel/speed-insights": "^1.1.0",
