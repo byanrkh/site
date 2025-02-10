@@ -70,7 +70,7 @@ export default function Projects() {
                     })}
                   </ul>
                   <div className="bg-zinc-500 rounded-full h-[3px] w-[3px] aspect-square flex-none relative "></div>
-                  <p className="opacity-50 text-sm">{p.tech}</p>
+                  <p className="opacity-50 text-sm capitalize">{p.tech}</p>
                 </div>
                 <hr className="border-1 border-[#252529] border-dashed my-3" />
                 <p className="">{p.summary}</p>
