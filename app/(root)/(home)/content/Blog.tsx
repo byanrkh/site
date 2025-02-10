@@ -12,7 +12,7 @@ export default async function Blog() {
       <div className="flex justify-between items-center">
         <Title>Latest Blogs</Title>
         <Link
-          href={"/blog"}
+          href={"/writings"}
           className="text-xs text-zinc-500 -mt-5 hover:underline"
         >
           view more

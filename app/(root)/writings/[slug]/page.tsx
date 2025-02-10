@@ -39,8 +39,8 @@ export default async function BlogPost({ params }: Props) {
           </li>
           /
           <li>
-            <Link href={"/blog"} className="hover:underline">
-              Blog
+            <Link href={"/writings"} className="hover:underline">
+              writings
             </Link>
           </li>
           /
@@ -50,7 +50,7 @@ export default async function BlogPost({ params }: Props) {
         <div className="flex justify-between items-center mx-2">
           <Link
             className="text-sm hover:underline bg-[#18181b] border border-[#252529] rounded px-1 py-0.5 text-zinc-500"
-            href={`/blog/tags/${post.tags}`}
+            href={`/writings/tags/${post.tags}`}
           >
             # {post.tags}
           </Link>{" "}
