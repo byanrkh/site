@@ -4,7 +4,7 @@ import React from "react";
 export default function About() {
   return (
     <section>
-      <Title>About</Title>
+      <Title emoji="🙌">About</Title>
       <div className="space-y-8">
         <p>
           Abyan was born in <u>Jakarta, Indonesia</u>. a 16 years web developer

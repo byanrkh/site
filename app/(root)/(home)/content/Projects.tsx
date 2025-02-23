@@ -27,7 +27,7 @@ export default function Projects() {
 
   return (
     <section>
-      <Title>Projects</Title>
+      <Title emoji="📑">Projects</Title>
       <div className="grid gap-2">
         {project.map((p, idx) => {
           return (
