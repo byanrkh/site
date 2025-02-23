@@ -23,6 +23,14 @@ export default function Projects() {
       tags: ["NextJS", "MDX"],
       link: "https://github.com/byanrkh/mdx-blog",
     },
+    {
+      label: "Pomodoro Timer",
+      image: "pomodoro.png",
+      tech: "typescript",
+      summary: "Pomodoro Timer created with NextJS!",
+      tags: ["NextJS"],
+      link: "https://github.com/byanrkh/pomodoro",
+    },
   ];
 
   return (
